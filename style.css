@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15vh;
+}
+
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 34.5vw;
+  background-color: #ebf3ff;
+}
+
+@media screen and (max-width: 768px) {
+  .header .logo {
+    width: 81.5vw;
+  }
+}
+
+.header .logo .log {
+  padding-right: 6vw;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: LibreFranklin;
+  font-size: 77%;
+  font-weight: 600;
+  color: #364459;
+  font-style: normal;
+  font-stretch: normal;
+  width: 45.4vw;
+}
+
+@media screen and (max-width: 768px) {
+  .header .menu {
+    display: none;
+  }
+}
+
+.header .menu a {
+  text-decoration: none;
+  color: #364459;
+}
+
+.header .menu a:hover {
+  text-shadow: 0em 0em 0em #364459, 0 0 1em #6583af;
+}
+
+.header .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 19vw;
+}
+
+.header .contact .contact__icon {
+  width: 10vw;
+  height: 15vh;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #16c2b8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ffffff;
+  border-left: 1px solid #8ca0bf;
+}
+
+.header .contact .contact__icon:hover {
+  background-color: #c9c8c83b;
+}
+
+@media screen and (max-width: 768px) {
+  .header .contact .contact__icon_call {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header .contact .contact__icon_account {
+    display: none;
+  }
+}
+
+.header .contact .contact__icon_cart {
+  width: 10vw;
+  height: 15vh;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #16c2b8;
+  background-color: #0d3a7f;
+}
+
+@media screen and (max-width: 768px) {
+  .header .contact .contact__icon_cart {
+    width: 30vw;
+  }
+}
+
+.header .contact .contact__icon_cart:hover {
+  background-color: #0a0252e3;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 88.2vh;
+}
+
+.main .agents-provide {
+  background-color: #0d3a7f;
+  width: 34.55vw;
+}
+
+@media screen and (max-width: 768px) {
+  .main .agents-provide {
+    width: 100vw;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./img/jasper-van-der-meij-97274-unsplash.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/jasper-van-der-meij-97274-unsplash.png");
+    background-repeat: no-repeat;
+    background-size: 1vh;
+    background-size: 164vh;
+  }
+}
+
+.main .agents-provide .agents-provide__size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15vh 0vw 0vh 9vw;
+}
+
+@media screen and (max-width: 768px) {
+  .main .agents-provide .agents-provide__size {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10vh 0vw 0vh 0vw;
+  }
+}
+
+.main .agents-provide .agents-provide__size .agents-name {
+  font-family: LibreFranklin;
+  font-size: 327%;
+  font-weight: 600;
+  color: #ffffff;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .main .agents-provide .agents-provide__size .agents-name {
+    text-align: center;
+  }
+}
+
+.main .agents-provide .agents-provide__size .a {
+  font-family: LibreFranklin;
+  font-size: 106%;
+  font-weight: 300;
+  color: #ffffff;
+  font-style: normal;
+  font-stretch: normal;
+  padding: 2vh 0vw 5.5vh 0.5vw;
+  width: 21vw;
+}
+
+@media screen and (max-width: 768px) {
+  .main .agents-provide .agents-provide__size .a {
+    width: 81vw;
+  }
+}
+
+.main .agents-provide .agents-provide__size .button {
+  width: 16.2vw;
+  height: 11vh;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #16c2b8;
+}
+
+.main .agents-provide .agents-provide__size .button:hover {
+  background-color: #03b6adec;
+}
+
+.main .agents-provide .agents-provide__size .button .button__inner {
+  font-family: LibreFranklin;
+  font-size: 98%;
+  font-weight: 600;
+  color: #ffffff;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .main .agents-provide .agents-provide__size .button {
+    width: 66vw;
+  }
+}
+
+.main .agents-provide .agents-provide__size .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1vh;
+  padding-left: 0.3vw;
+}
+
+.main .agents-provide .agents-provide__size .login .login__explanation {
+  font-family: LibreFranklin;
+  font-size: 93%;
+  font-weight: 300;
+  color: #ffffff;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.main .agents-provide .agents-provide__size .login .login__in {
+  text-decoration: none;
+  color: #16c2b8;
+  font-family: LibreFranklin;
+  font-size: 93%;
+  font-weight: 300;
+  color: #16c2b8;
+  font-style: normal;
+  font-stretch: normal;
+  padding-left: 0.4vw;
+}
+
+.main .slider-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("./img/jasper-van-der-meij-97274-unsplash.png");
+  background-repeat: no-repeat;
+  width: 64.45vw;
+}
+
+.main .slider-block .slider-block__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #317b6c;
+  width: 21vw;
+  height: 14vh;
+  margin-bottom: 4vh;
+  margin-right: 1.4vw;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .slider-block .slider-block__slide .slider-block__distinations {
+  font-family: LibreFranklin;
+  font-size: 69%;
+  font-weight: 600;
+  color: #ffffff;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 3px;
+  padding-top: 1vh;
+}
+
+.main .slider-block .slider-block__slide .slider-block__text {
+  font-family: LibreFranklin;
+  font-size: 263%;
+  font-weight: 900;
+  color: #ffffff;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.main .slider-block .slider-block__rhombus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 7vh;
+}
+
+.main .slider-block .slider-block__rhombus .rhombus {
+  margin: 0vh 0.9vw;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 0.45vw;
+  height: 1vh;
+  border: 0.1vw solid #ffffff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .slider-block .slider-block__rhombus .showing {
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .main .slider-block {
+    display: none;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 98.5vw;
+  margin-top: -14.7vh;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: -28.7vh;
+  }
+}
+
+.footer .input-location {
+  width: 39.5vw;
+}
+
+.footer .input-when {
+  width: 11.5vw;
+}
+
+.footer .input-duration {
+  width: 11.5vw;
+}
+
+.footer .button-transition {
+  width: 6.5vw;
+  height: 14.5vh;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #16c2b8;
+  width: 6.5vw;
+}
+
+.footer .button-transition .span-transition {
+  width: 5vw;
+  height: 1vh;
+  background-color: #ffffff;
+}
+
+.footer .button-transition:hover {
+  background-color: #03b6adec;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .button-transition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80vw;
+    height: 7vh;
+  }
+}
+
+.footer .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 0.01vw solid #8ca0bf;
+  background-color: #ffffff;
+}
+
+.footer .form .form__image {
+  padding: 0vh 1vw;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .form .form__image {
+    padding: 0vh 6vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .form {
+    width: 80vw;
+    height: 7vh;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.footer .input {
+  font-family: LibreFranklin;
+  font-size: 101%;
+  font-weight: 500;
+  color: #364459;
+  font-style: normal;
+  font-stretch: normal;
+  border-bottom: 0.01vw solid #8ca0bf;
+  border-top: 0.01vw solid #8ca0bf;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  height: 14.6vh;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .input {
+    height: 7vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

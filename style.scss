@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@mixin  button($width,$height) {
+    width: $width;
+    height: $height;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: #16c2b8;
+}
+
+@mixin link ($color){
+    text-decoration: none;
+    color: $color;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin flex-center-noaround {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font($size, $weight, $olor) {
+    font-family: LibreFranklin;
+    font-size: $size;
+    font-weight: $weight;
+    color: $olor;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.header {
+    display: flex;
+    height: 15vh;
+    .logo {
+        @include flex-center();
+            width: 34.5vw;
+            background-color: #ebf3ff;
+        @media screen and (max-width: 768px) {
+            width: 81.5vw;
+        } 
+        .log {
+            padding-right: 6vw;
+        }
+    }
+    .menu {
+        @include flex-center();
+        @include font(77%, 600, #364459);
+        width: 45.4vw;
+        @media screen and (max-width: 768px) {
+            display: none;
+        } 
+        a {
+            @include link(#364459);
+            &:hover {
+                text-shadow: 0em 0em 0em #364459, 0 0 1em #6583af;
+            }
+        }
+    }
+    .contact {
+        @include flex-center();
+        width: 19vw;
+        .contact__icon {
+            @include button(10vw, 15vh);
+            @include flex-center();
+            background-color: #ffffff;
+            border-left: 1px solid #8ca0bf;
+            &:hover {
+                background-color: #c9c8c83b;
+            }
+
+        }
+        .contact__icon_call {
+            @media screen and (max-width: 768px) {
+                display: none;
+             }
+        }
+        .contact__icon_account {
+            @media screen and (max-width: 768px) {
+                display: none;
+             }
+        }
+        .contact__icon_cart {
+            @include button(10vw, 15vh);
+            background-color: #0d3a7f;
+            @media screen and (max-width: 768px) {
+                width: 30vw;
+            }
+            &:hover {
+                background-color: #0a0252e3;
+            }
+        }
+    }
+}
+
+.main {
+    display: flex;
+    height: 88.2vh;
+    .agents-provide {
+        background-color: #0d3a7f;
+        width: 34.55vw;
+        @media screen and (max-width: 768px) {
+           width: 100vw;
+           background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/jasper-van-der-meij-97274-unsplash.png');
+           background-repeat: no-repeat;
+           background-size: 1vh;
+           background-size: 164vh;
+        }
+        .agents-provide__size {
+            @include flex-column();
+            padding: 15vh 0vw 0vh 9vw;
+            @media screen and (max-width: 768px) {
+                align-items: center;
+                padding: 10vh 0vw 0vh 0vw;
+            }
+            .agents-name {
+                @include font(327%, 600, #ffffff);
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                }
+            }
+            .a {
+                @include font(106%, 300, #ffffff);
+                padding: 2vh 0vw 5.5vh 0.5vw;
+                width: 21vw;
+                @media screen and (max-width: 768px) {
+                    width: 81vw;
+                }
+            }
+            .button {
+                @include button (16.2vw, 11vh);
+                &:hover {
+                    background-color: #03b6adec;
+                }
+                .button__inner {
+                    @include font(98%, 600, #ffffff);
+                }
+                @media screen and (max-width: 768px) {
+                    width: 66vw;
+                }
+            }
+            .login {
+                display: flex;
+                padding-top: 1vh;
+                padding-left: 0.3vw;
+                .login__explanation {
+                    @include font(93%, 300, #ffffff);
+                }
+                .login__in {
+                    @include link(#16c2b8);
+                    @include font(93%, 300, #16c2b8);
+                    padding-left: 0.4vw;
+                }
+            }
+        }
+    }
+    .slider-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url('./img/jasper-van-der-meij-97274-unsplash.png');
+        background-repeat: no-repeat;
+        width: 64.45vw;
+        .slider-block__slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #317b6c;
+            width: 21vw;
+            height: 14vh;
+            margin-bottom: 4vh;
+            margin-right: 1.4vw;
+            transition: 1s;
+            .slider-block__distinations {
+                @include font (69%, 600, #ffffff);
+                letter-spacing: 3px;
+                padding-top: 1vh;
+            }
+            .slider-block__text {
+                @include font(263% , 900, #ffffff);
+            }
+        }
+        .slider-block__rhombus {
+            display: flex;
+            margin-bottom: 7vh;
+            .rhombus {
+                margin: 0vh 0.9vw;
+                transform: rotate(45deg);
+                width: 0.45vw;
+                height: 1vh;
+                border: 0.1vw solid #ffffff;
+                transition: 1s;
+            }
+            .showing {
+                background-color: #ffffff;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+.footer {
+    @include flex-center-noaround();
+    width: 98.5vw;
+    margin-top: -14.7vh;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin-top: -28.7vh;
+    }
+    .input-location {
+        width: 39.5vw;
+    }
+    .input-when {
+        width: 11.5vw;
+    }
+    .input-duration {
+        width: 11.5vw;
+    }
+    .button-transition {
+        @include button(6.5vw, 14.5vh);
+        width: 6.5vw;
+        .span-transition {
+            width: 5vw;
+            height: 1vh;
+            background-color: #ffffff;
+        }
+        &:hover {
+            background-color: #03b6adec;
+        }
+        @media screen and (max-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80vw;
+            height: 7vh;
+        }
+    }
+    .form {
+        @include flex-center();
+        border: 0.01vw solid #8ca0bf;
+        background-color: #ffffff;
+        .form__image {
+            padding: 0vh 1vw;
+            @media screen and (max-width: 768px) {
+                padding: 0vh 6vw;
+            }
+        }
+    @media screen and (max-width: 768px) {
+        width: 80vw;
+        height: 7vh;
+        justify-content: flex-start;
+    }
+    }
+    .input {
+        @include font(101% , 500, #364459);
+        border-bottom: 0.01vw solid #8ca0bf;
+        border-top: 0.01vw solid #8ca0bf;
+        border-left: none;
+        border-right: none;
+        outline:none;
+        height: 14.6vh;
+        @media screen and (max-width: 768px) {
+            height: 7vh;
+        }
+    }
+}
+
